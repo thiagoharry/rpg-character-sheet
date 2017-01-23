@@ -1,0 +1,206 @@
+\documentclass[a4paper,oneside,twocolumn]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+
+\def\caixa{\hbox to 0.42cm{\vbox to 0.3cm{\hrule width 0.3cm\hbox{\vbox to 0.3cm{\hbox{%
+\vrule height 0.3cm\vrule height 0cm width 0.27cm\vrule height 0.3cm}}}%
+\hrule width 0.3cm}}}
+
+\def\espaco#1{{\dimen0=#1\divide\dimen0 by 3\ifvmode\vskip#1%
+          plus\dimen0 minus\dimen0\else\hskip#1 plus\dimen0%
+          minus\dimen0\relax\fi}}
+
+\def\negrito#1{\textbf{#1}}
+
+\begin{document}
+
+\thispagestyle{empty}
+\voffset=-4cm
+\addcontentsline{toc}{section}{Ficha de Personagem}
+\kern-2cm
+\hrule width 15cm% Topo
+\vskip1mm
+\halign{\negrito{#:} & #\espaco{2,6cm}&\negrito{#:} &
+  #\espaco{3,3cm}&\negrito{#} & #\cr
+Nome&&Tipo&&Conceito:&\cr
+Jogador&&Organização&&Objetivo:&\cr
+}
+\vskip1mm
+\hrule width 15cm
+\vskip2mm
+\hfill Atributos\hfill
+\vskip1mm
+\hrule width 15cm
+\vskip2mm 
+\noindent\hbox{\espaco{1,7cm}Físicos\espaco{4cm}Sociais\espaco{4cm}Mentais}
+
+\halign{\negrito{#:} & \espaco{1,9cm}#\espaco{0,85cm}&\negrito{#:} &
+  \espaco{0,65cm}#\espaco{0,85cm}&\negrito{#:} & \espaco{0,55cm}#\cr
+Força&$\bullet\circ\circ\circ\circ$&
+Manipulação&$\bullet\circ\circ\circ\circ$&
+Inteligência&$\bullet\circ\circ\circ\circ$\cr
+Destreza&$\bullet\circ\circ\circ\circ$&
+Carisma&$\bullet\circ\circ\circ\circ$&
+Raciocínio&$\bullet\circ\circ\circ\circ$\cr
+Vigor&$\bullet\circ\circ\circ\circ$&
+Aparência&$\bullet\circ\circ\circ\circ$&
+Percepção&$\bullet\circ\circ\circ\circ$\cr}
+\vskip1mm
+\hrule width 15cm
+\vskip2mm
+\hfill Habilidades\hfill
+\vskip1mm
+\hrule width 15cm
+\vskip3mm
+\noindent\hbox{\espaco{1,7cm}Talentos\espaco{4cm}Perícias\espaco{3,5cm}Conhecimentos}
+
+% Conhecimento, talento, perícia
+\halign{\negrito{#:}\espaco{1cm} & #\espaco{0,85cm}&\negrito{#:} &
+  #\espaco{0,85cm}&\negrito{#:} & \espaco{0,35cm}#\cr
+Artes&$\circ\circ\circ\circ\circ$&
+Armas Brancas$^*$&$\circ\circ\circ\circ\circ$&
+Acadêmicos&$\circ\circ\circ\circ\circ$\cr
+Briga&$\circ\circ\circ\circ\circ$&
+Armas de Fogo&$\circ\circ\circ\circ\circ$&
+Burocracia&$\circ\circ\circ\circ\circ$\cr
+Busca&$\circ\circ\circ\circ\circ$&
+Artilharia$^*$&$\circ\circ\circ\circ\circ$&
+Ciência&$\circ\circ\circ\circ\circ$\cr
+Concentração&$\circ\circ\circ\circ\circ$&
+Cavalaria&$\circ\circ\circ\circ\circ$&
+Computador&$\circ\circ\circ\circ\circ$\cr
+Empatia&$\circ\circ\circ\circ\circ$&
+Condução&$\circ\circ\circ\circ\circ$&
+Cosmologia&$\circ\circ\circ\circ\circ$\cr
+Esportes&$\circ\circ\circ\circ\circ$&
+Empatia Animal&$\circ\circ\circ\circ\circ$&
+Direito&$\circ\circ\circ\circ\circ$\cr
+Expressão&$\circ\circ\circ\circ\circ$&
+Etiqueta$^*$&$\circ\circ\circ\circ\circ$&
+Economia&$\circ\circ\circ\circ\circ$\cr
+Intimidação&$\circ\circ\circ\circ\circ$&
+Explosivos&$\circ\circ\circ\circ\circ$&
+Geografia&$\circ\circ\circ\circ\circ$\cr
+Instinto&$\circ\circ\circ\circ\circ$&
+Furtividade&$\circ\circ\circ\circ\circ$&
+Linguística&$\circ\circ\circ\circ\circ$\cr
+Instrução&$\circ\circ\circ\circ\circ$&
+Meditação&$\circ\circ\circ\circ\circ$&
+Matemática&$\circ\circ\circ\circ\circ$\cr
+Lábia&$\circ\circ\circ\circ\circ$&
+Navegação&$\circ\circ\circ\circ\circ$&
+Medicina&$\circ\circ\circ\circ\circ$\cr
+Liderança&$\circ\circ\circ\circ\circ$&
+Ofícios&$\circ\circ\circ\circ\circ$&
+Ocultismo&$\circ\circ\circ\circ\circ$\cr
+Prontidão&$\circ\circ\circ\circ\circ$&
+Pilotagem&$\circ\circ\circ\circ\circ$&
+Pesquisa&$\circ\circ\circ\circ\circ$\cr
+Sensitividade&$\circ\circ\circ\circ\circ$&
+Tecnologia&$\circ\circ\circ\circ\circ$&
+Política&$\circ\circ\circ\circ\circ$\cr
+Vôo&$\circ\circ\circ\circ\circ$&
+Sobrevivência&$\circ\circ\circ\circ\circ$&
+Rituais&$\circ\circ\circ\circ\circ$\cr
+}
+\vskip1mm
+\hrule width 15cm
+\vskip2mm
+\hfill Vantagens\hfill
+\vskip1mm
+\hrule width 15cm
+\vskip3mm
+\noindent\hbox{\espaco{1,7cm}Virtudes\espaco{4cm}Antecedentes\espaco{3cm}Númina}
+\vskip1mm
+\hbox{\vbox{\halign{\negrito{#} & \espaco{0,8cm}#\cr
+Auto-Controle:&$\bullet\circ\circ\circ\circ$\cr
+&\cr
+Compaixão:&$\bullet\circ\circ\circ\circ$\cr
+&\cr
+Convicção:&$\bullet\circ\circ\circ\circ$\cr
+&\cr
+Coragem:&$\bullet\circ\circ\circ\circ$\cr
+}}\espaco{0,75cm}
+\vbox{\halign{\negrito{#} & \espaco{0,5cm}#\cr
+\espaco{2,5cm}&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+}}
+\espaco{0,6cm}
+\vbox{\halign{\negrito{#} & \espaco{0,5mm}#\cr
+\espaco{2,7cm}&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+&$\circ\circ\circ\circ\circ$\cr
+}}
+}
+\vskip1mm
+\hrule width 15cm\espaco{1mm}
+\hbox{%
+  Bloqueio: \rule{1cm}{0.4pt} = (\rule{1cm}{0.4pt} + \rule{1cm}{0.4pt}\hfill + \rule{1cm}{0.4pt})/2\espaco{1,2cm}%
+  $\left(\frac{\textrm{Destreza}+\textrm{Briga}+\textrm{Bônus e Penalidades}}{2}\right)$%
+}%
+\vskip1mm
+\hbox{%
+  Defesa Mental: \rule{1cm}{0.4pt} = (\rule{1cm}{0.4pt} + \rule{1cm}{0.4pt})/2\espaco{1,4cm}%
+  $\left(\frac{\textrm{Força de Vontade}+\textrm{Bônus e Penalidades}}{2}\right)$%
+}%
+\vskip1mm
+\hbox{%
+  Escudo: \rule{0,9cm}{0.4pt} = (\rule{0,9cm}{0.4pt} + \rule{0,9cm}{0.4pt}\hfill + \rule{1cm}{0.4pt})/2\espaco{0,2cm}%
+  $\left(\frac{\textrm{Destreza}+\textrm{Armas Brancas}+\textrm{Bônus e Penalidades}}{2}\right)$%
+}%
+\vskip1mm
+\hbox{%
+  Esquiva: \rule{1cm}{0.4pt} = (\rule{1cm}{0.4pt} + \rule{1cm}{0.4pt}\hfill + \rule{1cm}{0.4pt})/2\espaco{0,8cm}%
+  $\left(\frac{\textrm{Destreza}+\textrm{Esportes}+\textrm{Bônus e Penalidades}}{2}\right)$%
+}%
+\vskip1mm
+\hrule width 15cm\espaco{1mm}
+\vbox to 1cm{%
+    \hbox{%
+      \vbox{%
+        \hbox to 4,5cm{\hfil\negrito{Intimidades}\hfil}%
+        \vskip3cm
+        \espaco{1mm}\hrule\espaco{1mm}%
+        \hbox to 4,5cm{\hfil\negrito{Sanidade}\hfil}%
+        \halign to 4,5cm{%
+          #\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\cr
+          $\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$\cr
+          \caixa&\caixa&\caixa&\caixa&\caixa&\caixa&\caixa&\caixa&\caixa&\caixa\cr
+        }%
+        \hbox to 4,5cm{\hfil\negrito{Força de Vontade}\hfil}%
+        \halign to 4,5cm{%
+          #\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\hskip0,25mm&#\cr
+          $\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$&$\bigcirc$\cr
+          \caixa&\caixa&\caixa&\caixa&\caixa&\caixa&\caixa&\caixa&\caixa&\caixa\cr
+        }%
+        \espaco{1mm}\hrule\espaco{1mm}%
+        \hbox to 4,5cm{\hfil\negrito{Vitalidade}\hfil}%
+        \halign to 4,5cm{%
+          \kern1mm\negrito{#} & # & #\cr%
+          Escoriado&&\caixa\cr
+          Machucado&-1&\caixa\cr
+          Ferido&-1&\caixa\cr
+          Ferido Gravemente&-2&\caixa\cr
+          Espancado&-2&\caixa\cr
+          Aleijado&-5&\caixa\cr
+          Incapacitado&&\caixa\cr
+        }%
+        \vskip1mm\hrule%
+      }%
+      \vrule width 0.3pt height 9,5cm%
+    }%
+}%
+
+\clearpage
+
+\end{document}
